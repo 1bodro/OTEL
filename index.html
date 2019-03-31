@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Октябрский гостиничный отель</title>
+	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header"></div>
+		<div class="header-table">
+			<span class="choices__header">
+                   Номер "Бизнес" (от 2100 рублей в сутки)</span><span class="choices__desc">
+                    номер с одной увеличенной кроватью
+                </span>
+		</div>
+		<div class="nomer">
+			<div class="choices">
+				<span class="choices__header table-none">
+                   Номер "Бизнес" (от 2100 рублей в сутки)</span>
+				<span class="choices__disc table-none">
+                    номер с одной увеличенной кроватью
+                </span>
+				<!--выбор количества дней-->
+				<div class="choices__days">
+					<span>Выберите количество дней</span>
+					<div class="select-wrapper select-wrapper__days">
+						<div class="select-arrow"></div>
+						<select id='day' name="day" class="dropdown-select" autocomplete="off">   
+                          <option value='1'>1</option>
+                          <option value='2'>2</option>
+                          <option value='3'>3</option> 
+                          <option value='4'>4</option> 
+                          <option value='5'>5</option> 
+                          <option value='6'>6</option> 
+                          <option value='7'>7</option> 
+                          <option value='8'>8</option> 
+                          <option value='9'>9</option> 
+                          <option value='10'>10</option> 
+                          <option value='11'>11</option> 
+                          <option value='12'>12</option> 
+                          <option value='13'>13</option> 
+                          <option value='14'>14</option> 
+                          <option value='15'>15</option>          
+                        </select>
+					</div>
+				</div>
+				<!--выбор количества гостей-->
+				<div class="choices__visitors">
+					<span>Выберите количество гостей</span>
+					<div class="select-wrapper select-wrapper__visitiors">
+						<div class="select-arrow"></div>
+						<select id="persons" name="persons" class="dropdown-select" autocomplete="off">   
+                          <option value="2100">
+                          1</option>
+                          <option value="2400">
+                          2</option>           
+                        </select>
+					</div>
+				</div>
+
+				<div class="choices__food">
+					<!--выбор ланча и ужин-->
+					<span class="header-style header-style__food">
+                            Бизнес-ланч и ужин
+                        </span>
+					<div class="choices__lanch">
+						<div class="select-price">
+							<span>
+                            <strong>Бизнес-ланч</strong> количество
+                        </span>
+							<div class="select-wrapper">
+								<div class="select-arrow"></div>
+								<select id="lanch" name="select-lanch" class="dropdown-select" autocomplete="off">  
+                            <option value="0">нет</option> 
+                          <option value="250" >1</option>
+                                     
+                        </select>
+							</div>
+						</div>
+						<span class="price-lanch"></span>
+					</div>
+					<div class="choices__dinner">
+						<div class="select-price">
+							<span class="dinner-title">
+                        <strong>Ужин</strong> количество
+                        </span>
+							<div class="select-wrapper">
+								<div class="select-arrow"></div>
+								<select id="dinner" name="select-dinner" class="dropdown-select" autocomplete="off">  
+                            <option value="0" >нет</option> 
+                          <option value="450" >1</option>          
+                        </select>
+							</div>
+						</div>
+						<span class="price-dinner"></span>
+					</div>
+				</div>
+			</div>
+			<!--фото номера-->
+			<div class="nomer-photo"> </div>
+		</div>
+		<!--выбор трансфера и время заезда-->
+		<div class="transfer">
+			<div class="transfer__hour">
+				<div class="transfer__hour__header">
+					<span class="header-style">
+                   Трансфер 
+                </span>
+					<span class="header-style-tip">
+                   Выберите подходящий вариант трансфера
+               </span>
+				</div>
+				<div class="transfer__hour__choice">
+					<div class="transfer__part">
+						<span class="transfer__time">с 8:00 до 18:00</span>
+						<div class="transfer__radio">
+							<label>
+                    <input class="radio" type="radio" name="radio-early" value="0" checked>
+                    <span class="radio-custom"></span>
+                    <span class="label">Не требуется</span>
+                </label>
+							<label>
+                    <input class="radio" type="radio" name="radio-early" value="350">
+                    <span class="radio-custom"></span>
+                    <span class="label">В одну сторону</span>
+                    <span class="label">(350 руб)</span>
+                </label>
+							<label>
+                    <input class="transfer-all radio" type="radio" name="radio-early"  value="700">
+                    <span class="radio-custom"></span>
+                    <span class="label">Туда-обратно</span>
+                     <span class="label">(700 руб)</span>
+                </label>
+						</div>
+					</div>
+					<div class="transfer__part">
+						<span class="transfer__time">с 18:00 до 8:00</span>
+						<div class="transfer__radio">
+							<label>
+                    <input class="radio" type="radio" name="radio-late" value="0" checked >
+                    <span class="radio-custom"></span>
+                    <span class="label">Не требуется</span>
+                </label>
+							<label>
+                    <input class="radio" type="radio" name="radio-late" value="500">
+                    <span class="radio-custom"></span>
+                    <span class="label">В одну сторону</span>
+                    <span class="label">(500 руб)</span>
+                </label>
+							<label>
+                    <input class="radio transfer-all" type="radio" name="radio-late" value="1000">
+                    <span class="radio-custom"></span>
+                    <span class="label">Туда-обратно</span>
+                    <span class="label">(1000 руб)</span>
+                </label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="transfer__checktime">
+				<div class="transfer__checktime__header">
+					<div class="transfer__part">
+						<span class="header-style">
+                    Ранний заезд
+                </span>
+						<span class="header-style-tip">
+                            Выберите время раннего заезда
+                        </span>
+					</div>
+					<div class="transfer__part">
+						<span class="header-style">
+                    Поздний выезд
+                </span>
+						<span class="header-style-tip">
+                            Выберите время позднего заезда
+                        </span>
+					</div>
+				</div>
+				<div class="transfer__checktime__choice ">
+					<div class="transfer__radio">
+						<label>
+                    <input class="radio" type="radio" name="radio-checktime-early" value="0" checked>
+                    <span class="radio-custom"></span>
+                    <span class="label">Не требуется</span>
+                </label>
+						<label>
+                    <input class="radio" type="radio" name="radio-checktime-early" value="1">
+                    <span class="radio-custom"></span>
+    
+                    <span class="label">с 00:00 до 6:00</span>
+                    <span class="label">100% от стоимости</span>
+                   
+                </label>
+						<label>
+                    <input class="radio" type="radio" name="radio-checktime-early" value="0.5">
+                    <span class="radio-custom"></span>
+                   
+                    <span class="label">с 06:00 до 12:00</span>
+                     <span class="label">50% от стоимости</span>
+
+                </label>
+					</div>
+					<div class="transfer__radio">
+						<label>
+                    <input class="radio" type="radio" name="radio-checktime-late" value="0" checked>
+                    <span class="radio-custom"></span>
+                    <span class="label">Не требуется</span>
+                </label>
+						<label>
+                    <input class="radio" type="radio" name="radio-checktime-late" value="0.5">
+                    <span class="radio-custom"></span>
+                    <span class="label">с 12:00 до 18:00</span>
+                     <span class="label">50% от стоимости</span>
+                </label>
+						<label>
+                    <input class="radio" type="radio" name="radio-checktime-late" value="1">
+                    <span class="radio-custom"></span>
+                    <span class="label-2">с 18:00 до 00:00</span>
+                      <span class="label">100% от стоимости</span>
+                </label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--секция подсчет суммы-->
+		<div class="section-result">
+			<div class="section-result-info">
+				<div class="section-result-part">
+					<span class="section-result-part-info">бизнес</span>
+				</div>
+				<div class="section-result-part nomer-price">
+					<span id="pay_price" class="section-result-part-info"></span>
+					<span class="header-style-tip">цена</span>
+				</div>
+				<div class="section-result-part nomer-day">
+					<span id="days" class="section-result-part-info"></span>
+					<span class="header-style-tip">ночей</span>
+				</div>
+				<div class="section-result-part nomer-result">
+					<span class="section-result-part-info" id="pay_sale"></span>
+					<span class="section-result-part-info" id="condition_sale"></span>
+					<span class="header-style-tip">итого</span>
+				</div>
+			</div>
+			<div class="section-result-sale">
+				<span>**Скидка на бронирование распространяется только при оплате на сайте</span>
+			</div>
+			<div class="section-result-next">
+				<div class="section-result-next-help">
+					<span>
+                         Нужна помощь?
+                     </span>
+					<a class="callform" href="#form">Нажмите здесь, чтобы мы Вам перезвонили</a>
+				</div>
+				<a class="buttom buttom-next-step" href="#1">
+                        <span>Далее</span>
+                    </a>
+			</div>
+		</div>
+		<div class="section-contact">
+			<span class="section-contact-header">звоните и пишите нам</span>
+			<span class="section-contact-list">
+ +7(8652)22-16-16, +7(928)321-35-00, info@stavhotel.ru
+            </span>
+		</div>
+		<!--подвал-->
+		<div class="footer"></div>
+	</div>
+	<script src='js/main.js'></script>
+</body>
+
+</html>
